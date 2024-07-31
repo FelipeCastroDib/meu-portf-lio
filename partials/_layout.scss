@@ -1,0 +1,233 @@
+
+.bg-home {
+    position: relative;
+    min-height: 100vh; /* Garante que a seção tenha pelo menos a altura da janela */
+  }
+
+.bg-home::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #44039963, #0a0a0a),
+      url("../assets/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #f2f2f2;
+    padding: 24px 16px 14px;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+.topo{
+    color: #fff;
+    text-align: left;
+    margin: 14px 0 0 14px;
+}
+.home-icons{
+    i{
+        color: #fff;
+    }
+    margin-left: 120px;
+    margin-top: 50px;
+    display: flex;
+    gap: 14px;
+}
+
+.home-icons .linkedin:hover {
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color: #1084f8;
+    }
+}
+
+.home-icons .git-hub:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color: rgba($color: #000000, $alpha: 1.0);
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 2px;
+    }
+}
+
+.home-icons .whats-app:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color: #25D366;
+    }
+}
+
+.nav a:hover {
+    animation: translateY 0.8s infinite alternate;
+    color: #be96f3;
+}
+
+@keyframes translateY {
+    from{
+    transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+.conteudo-home {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens ao centro do container */
+    justify-content: space-between; /* Espaça os itens horizontalmente entre as extremidades do container */
+    padding: 20px;
+    min-height: 100vh;
+}
+        
+.conteudo-home h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 56px;
+    flex: 1; /* Permite que o conteúdo textual ocupe o máximo de espaço disponível */
+    margin-right: 20px; /* Espaçamento à direita entre o texto e a imagem */
+}
+
+.conteudo-home p {
+    text-align: center;
+    margin: 14px 0;
+    font-size: 20px;
+}
+
+.conteudo-home img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 300px; /* Ajusta a largura máxima da imagem */
+    border-radius: 240px;
+    margin-right: 300px;
+    
+}
+
+section {
+    padding: 60px 20px;
+        color: #fff;
+}
+
+#home{
+    margin-left: 200px;
+}
+section h1 {
+    margin: 0 0 20px;
+    color: #fff;
+}
+
+#about {
+    padding: 60px 20px;
+    text-align: center;
+}
+#about h1 {
+    font-size: 46px;
+}
+#about p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.badges img {
+    margin: 5px;
+    max-width: 90px;
+}
+
+#projects{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#skills {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-icons {
+    display: flex;
+    gap: 8px;
+    i{color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
